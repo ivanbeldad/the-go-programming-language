@@ -1,9 +1,9 @@
-# Go in Action
+# The Go Programming Language
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/ivandelabeldad/go-in-action/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/ivandelabeldad/the-go-programming-language/blob/master/LICENSE)
 
-Repository containing exercises and practices following the book Go in Action.
+Repository containing exercises and practices following the book The Go Programming Language.
 
 ## License
 
-The repository is open-sourced software licensed under the [MIT license](https://github.com/ivandelabeldad/go-in-action/blob/master/LICENSE).
+The repository is open-sourced software licensed under the [MIT license](https://github.com/ivandelabeldad/the-go-programming-language/blob/master/LICENSE).
