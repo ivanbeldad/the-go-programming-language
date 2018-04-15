@@ -5,8 +5,13 @@ package main
 
 import "fmt"
 
+// Celsius ...
 type Celsius float64
+
+// Fahrenheit ...
 type Fahrenheit float64
+
+// Kelvin ...
 type Kelvin float64
 
 const (
@@ -19,7 +24,7 @@ const (
 )
 
 func main() {
-	var temp Celsius = 0
+	var temp Celsius
 	fmt.Printf("%s", CToK(temp))
 }
 
