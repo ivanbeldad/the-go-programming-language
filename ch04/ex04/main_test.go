@@ -18,12 +18,6 @@ func BenchmarkReverse(b *testing.B) {
 	}
 }
 
-func BenchmarkReverseNoLen(b *testing.B) {
-	for n := 0; n < b.N; n++ {
-		Rotate(sLong, n)
-	}
-}
-
 func BenchmarkReverseRotate(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		ReverseRotate(s, n)
@@ -33,6 +27,12 @@ func BenchmarkReverseRotate(b *testing.B) {
 func BenchmarkReverseNoLenRotate(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		ReverseNoLenRotate(s, n)
+	}
+}
+
+func BenchmarkReverseLong(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		Rotate(sLong, n)
 	}
 }
 
