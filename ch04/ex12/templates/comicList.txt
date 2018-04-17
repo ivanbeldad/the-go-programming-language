@@ -1,0 +1,3 @@
+{{- range . }}
+  Num: {{ .Num | printf "%-5d" }}  Title: {{ .Title }}
+{{- end }}

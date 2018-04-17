@@ -1,0 +1,9 @@
+Usage:
+
+    go run *.go command [arguments]
+
+The commands are:
+{{ "" }}
+    {{- range . }}
+      {{ .Name | printf "%-10.10s" }} {{ .Description }}
+    {{- end }}

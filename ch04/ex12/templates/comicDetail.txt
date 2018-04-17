@@ -1,0 +1,11 @@
+
+---------------------------------
+COMIC INFO
+
+Num:    {{ .Num }}
+Title:  {{ .Title }}
+Img:    {{ .Img }}
+Date:   {{ .Year }}/{{ .Month }}/{{ .Day }}
+Content:
+{{ .Transcript }}
+---------------------------------
