@@ -1,0 +1,21 @@
+
+------------------------
+Few:	   10
+Some:	  100
+Many:	 3000
+------------------------
+
+goos: windows
+goarch: amd64
+pkg: the-go-programming-language/extra/sort
+BenchmarkSelectionSortFew-8    	20000000	        84.4 ns/op
+BenchmarkBubbleSortFew-8       	20000000	        83.2 ns/op
+BenchmarkTreeSortFew-8         	 3000000	       567 ns/op
+BenchmarkSelectionSortSome-8   	    1000	   1693512 ns/op
+BenchmarkBubbleSortSome-8      	     300	   4508417 ns/op
+BenchmarkTreeSortSome-8        	   10000	    236553 ns/op
+BenchmarkSelectionSortMany-8   	     100	  14737485 ns/op
+BenchmarkBubbleSortMany-8      	      30	  42868640 ns/op
+BenchmarkTreeSortMany-8        	    2000	    803287 ns/op
+PASS
+ok  	the-go-programming-language/extra/sort	16.445s
