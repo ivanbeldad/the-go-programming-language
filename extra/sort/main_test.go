@@ -63,6 +63,12 @@ func BenchmarkSelectionSortFew(b *testing.B) {
 	}
 }
 
+func BenchmarkDobleSelectionSortFew(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		DobleSelectionSort(append([]int(nil), few...))
+	}
+}
+
 func BenchmarkBubbleSortFew(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		BubbleSort(append([]int(nil), few...))
@@ -81,6 +87,12 @@ func BenchmarkSelectionSortSome(b *testing.B) {
 	}
 }
 
+func BenchmarkDobleSelectionSortSome(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		DobleSelectionSort(append([]int(nil), some...))
+	}
+}
+
 func BenchmarkBubbleSortSome(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		BubbleSort(append([]int(nil), some...))
@@ -96,6 +108,12 @@ func BenchmarkTreeSortSome(b *testing.B) {
 func BenchmarkSelectionSortMany(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		SelectionSort(append([]int(nil), many...))
+	}
+}
+
+func BenchmarkDobleSelectionSortMany(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		DobleSelectionSort(append([]int(nil), many...))
 	}
 }
 

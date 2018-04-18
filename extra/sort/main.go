@@ -10,11 +10,12 @@ type tree struct {
 }
 
 func main() {
-	// v := []int{5, 9, 1}
-	v := []int{5, 9, 1, 10, 7, 3, 6, 8}
+	// v := []int{1, 3, 3, 2}
+	v := []int{5, 9, 1, 10, 7, 3, 6, 8, 4}
 	fmt.Printf("%v\n", TreeSort(append([]int(nil), v...), true))
 	fmt.Printf("%v\n", SelectionSort(append([]int(nil), v...)))
 	fmt.Printf("%v\n", BubbleSort(append([]int(nil), v...)))
+	fmt.Printf("%v\n", DobleSelectionSort(append([]int(nil), v...)))
 }
 
 // TreeSort ...
@@ -91,6 +92,38 @@ func BubbleSort(n []int) []int {
 				n[p1], n[p2] = n[p2], n[p1]
 			}
 		}
+	}
+	return n
+}
+
+// DobleSelectionSort ...
+func DobleSelectionSort(n []int) []int {
+	min := 0
+	max := 0
+	for i := 0; i < len(n)-1; i++ {
+		if n[i] < n[min] {
+			min = i
+		}
+		n[i], n[min] = n[min], n[i]
+	}
+	for i := 0; i < len(n)-1; i++ {
+		if n[i] > n[max] {
+			max = i
+		}
+		n[i], n[max] = n[max], n[i]
+	}
+	for fi, li := 0, len(n)-1; fi < li; fi, li = fi+1, li-1 {
+		minI := fi
+		maxI := li
+		for i := fi + 1; i < li; i++ {
+			if n[i] < n[minI] {
+				minI = i
+			} else if n[i] > n[maxI] {
+				maxI = i
+			}
+		}
+		n[fi], n[minI] = n[minI], n[fi]
+		n[li], n[maxI] = n[maxI], n[li]
 	}
 	return n
 }
