@@ -108,6 +108,6 @@ func main() {
 	x.Clear()
 
 	fmt.Printf("\nClear X\n")
-	fmt.Printf("X: %s\tLen: %d\n", &x, x.Len())
+	fmt.Printf("X: %s\t\tLen: %d\n", &x, x.Len())
 	fmt.Printf("Y: %s\tLen: %d\n", &y, y.Len())
 }
